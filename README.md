@@ -39,5 +39,4 @@ Do not execute this program, only send it or you will become the victim...**
 ## Credits
 
 The original source code was obtained from
-[Cexx.org](http://www.cexx.org/loveletter.htm) and formatted and commented by
-me.
+[Cexx.org](http://www.cexx.org/loveletter.htm) and I formatted It!
